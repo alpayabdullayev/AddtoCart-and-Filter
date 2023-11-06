@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <div class="navbarHeader  navbarNavbar" id="navbar1">
+        <header class="d-none d-lg-block">
+          <div class="container">
+            <div class="header-content d-flex">
+              <div class="header__left">
+                <h5>HELLO EVERYONE! 25% Off All Products</h5>
+              </div>
+              <div class="header__right">
+                <div class="header__content__right">
+                  <ul class="dropdown-wrap d-flex justify-content-end align-items-center">
+                    <li class="dropdown">
+                      <button class="dropdownBtn" id="USD__btn">USD <i class="fa-solid fa-chevron-down"
+                          style="color: #ffffff;"></i></button>
+                      <ul class="USD__UL text-dark">
+                        <li>
+                          <p>GBP</p>
+                        </li>
+                        <li>
+                          <p>ISO</p>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <button class="dropdownBtn" id="englsih__btn">ENGLISH <i class="fa-solid fa-chevron-down"
+                          style="color: #ffffff;"></i></button>
+                      <ul class="english__ul text-dark">
+                        <li class="text-dark p-2">
+                          <p>RUSSIA</p>
+                        </li>
+                        <li>
+                          <p class="p-2">FRENCH</p>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                </select>
+              </div>
+            </div>
+          </div>
+        </header>
+        <nav>
+          <div class="container">
+            <div class="navbarPronia ">
+              <div class="phone d-none d-lg-block">
+                <span class="span">
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <span class="spanPhone">+994 50 742 1937</span>
+              </div>
+              <div class="logo">
+                <img src="https://htmldemo.net/pronia/pronia/assets/images/logo/dark.png" alt="">
+              </div>
+              <div class="icons d-flex">
+                <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-user-group d-none d-lg-block"></i>
+                <i class="fa-regular fa-heart d-none d-lg-block"></i>
+    
+
+                <i id="barIcon" class="fa-solid fa-bars d-block d-lg-none"></i>
+                <i id="basket" class="fa-solid fa-store"></i>
+                <span class="count">0</span>
+    
+              </div>
+            </div>
+    
+          </div>
+        </nav>
+        <div class="navbar-links d-lg-block d-none">
+          <ul class="d-flex justify-content-center align-items-center gap-5 ">
+            <li><a href="">
+                <div>Home</div>
+              </a></li>
+            <li class="liflex"><a href="">
+                <div>Shop</div>
+              </a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">About </a></li>
+            <li><a href="">Pages</a></li>
+            <li><a href="">Contact </a></li>
+          </ul>
+        </div>
+    </div>
+
+
+    <!-- offCanvas start -->
+  <div class="offCanvas" id="offCanvas">
+    <div class="offcanvas-content" id="offcanvas-content">
+      <div class="offcanvasCloseBtn ms-2 d-flex justify-content-between align-items-center">
+        <h5>Shopping Cart</h5>
+        <span id="offcanvasCloseBtn"><i class="fa-solid fa-x" style="color: #000;"></i></span>
+        
+      </div>
+
+    </div>
+    <div id="offcanvasContentMain">
+        
+    </div>
+    <div class="div ms-2 mt-4">
+      <div id="totalCost"></div>
+      
+      <div id="discountedTotalCost"></div>
+    </div>
+    <div class="ms-2 mt" id="offcanvasEnd">
+
+    </div>
+  </div>
+  <!-- offcanvas end -->
+
+
+    <section id="ourProducts" class="full-height">
+        <div class="container">
+          <div class="section-title-wrap">
+            <h2 class="section-title mb-0">OUR Products</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <ul class="tab-ul nav ">
+                <li data-category="featured">
+                  <a class="btnSelect" id="featured-tab" href="#featured">
+                    Featured
+                  </a>
+                </li>
+                <li data-category="bestseller">
+                  <a id="btnSelect" href="#bestseller">
+                    Bestseller
+                  </a>
+                </li>
+                <li data-category="latest">
+                  <a id="btnSelect" href="#latest">
+                    Latest
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="cards">
+            <div class="row" id="row">
+  
+            </div>
+  
+          </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/request.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
